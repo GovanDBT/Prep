@@ -1,3 +1,8 @@
-body{
-    background-color: aqua;
+:root {
+    --dominant-color: #2d3949;
+    --secondary-color: #415263;
+    --complementary-color:;
+    --accent-color: #1dc77c;
+    --black-color: #474747;
+    --white-text: #fff;
 }
