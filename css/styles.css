@@ -1,3 +1,7 @@
+/* TODO:*/
+/*set up the complementary colors of the website*/
+
+/* Defining the color palette of the website*/
 :root {
     --dominant-color: #2d3949;
     --secondary-color: #415263;
@@ -5,4 +9,61 @@
     --accent-color: #1dc77c;
     --black-color: #474747;
     --white-text: #fff;
+}
+
+/*TYPOGRAPHY*/
+
+html {
+    /* 62.5% of 16px = 10px*/
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: var(--black-color);
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+h2, h3 {
+    color: var(--secondary-color);
+    font-family: open-sans, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+        font-size: 3.5rem;
+    }
+    
+    h1 {
+        font-size: 13rem;
+    }
+
+    h2 {
+        font-size: 5.5rem;
+    }
+
+    h3 {
+        font-size: 5rem;
+    }
 }
