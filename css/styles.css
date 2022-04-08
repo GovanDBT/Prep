@@ -11,6 +11,10 @@
     --white-text: #fff;
 }
 
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
 /* Typography */
 
 html {
@@ -19,8 +23,8 @@ html {
 }
 
 body {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
     color: var(--black-color);
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
     line-height: 1.5;
 }
@@ -50,6 +54,53 @@ p {
     margin-top: 0;
 }
 
+/* Buttons */
+
+.btn {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    padding: 1.2rem 2rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* TODO: insert button hover color, darker green */
+.btn:hover{
+    background-color: ;
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: var(--white-text);
+}
+
+.btn-callout {
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.btn-contact {
+    background-color: #fff;
+    color: var(--secondary-color);
+}
+
+/* TODO: insert button hover color, darker white */
+.btn-contact:hover {
+    background-color: ;
+}
+
+.btn-block {
+    display: inline-block;
+    width: 100%;
+}
+
+/* Media Queries */
+
 @media screen and (min-width: 1024px) {
     body{
         font-size: 3.5rem;
@@ -65,5 +116,10 @@ p {
 
     h3 {
         font-size: 5rem;
+    }
+
+    /* Buttons */
+    .btn {
+        font-size: 2.6rem;
     }
 }
