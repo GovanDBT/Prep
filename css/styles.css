@@ -52,6 +52,7 @@ h3 {
 
 p {
     margin-top: 0;
+    font-size: 2.5rem;
 }
 
 /* Buttons */
@@ -102,7 +103,6 @@ p {
 /* Media */
 
 .media {
-    border: solid 2px black;
     display: block;
     padding: 2rem 1rem;
     text-align: center;
@@ -121,6 +121,40 @@ p {
     font-size: 3.2rem;
 }
 
+/* Blocks */
+
+.blocks {
+    padding: 2rem 3rem;
+}
+
+.block-dark {
+    background: var(--dominant-color);
+    color: var(--white-text);
+}
+
+.block-dark .block-heading{
+    color: var(--white-text);
+}
+
+.block-content {
+    padding: 2rem 3rem;
+    text-align: center;
+}
+
+.curve {
+    padding: 0;
+}
+
+.curve svg {
+    display: block;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
 /* Media Queries */
 
 @media screen and (min-width: 1024px) {
@@ -138,6 +172,10 @@ p {
 
     h3 {
         font-size: 5rem;
+    }
+
+    p {
+        font-size: 3.2rem;
     }
 
     /* Buttons */
