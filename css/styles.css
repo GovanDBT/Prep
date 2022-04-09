@@ -99,6 +99,28 @@ p {
     width: 100%;
 }
 
+/* Media */
+
+.media {
+    border: solid 2px black;
+    display: block;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.media-icon {
+    color: var(--dominant-color);
+    font-size: 8rem;
+}
+
+.media-body p {
+    font-size: 2.2rem;
+}
+
+.media_title {
+    font-size: 3.2rem;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 1024px) {
@@ -121,5 +143,19 @@ p {
     /* Buttons */
     .btn {
         font-size: 2.6rem;
+    }
+
+    /* Media */
+
+    .media-icon {
+        font-size: 10rem;
+    }
+
+    .media_title {
+        font-size: 5.5rem;
+    }
+
+    .media-body p {
+        font-size: 3.2rem;
     }
 }
