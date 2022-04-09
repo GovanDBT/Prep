@@ -154,6 +154,33 @@ p {
     margin: 0 auto;
 }
 
+/* Quotes */
+
+.quote {
+    font-family: Perpetua, Arial, Helvetica, sans-serif;
+    font-size: 3.8rem;
+    font-style: italic;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.quote-text::before {
+    content: open-quote;
+}
+
+.quote-text::after {
+    content: close-quote;
+}
+
+.quote-name {
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.quote-occupation {
+    font-style: normal;
+}
 
 /* Media Queries */
 
