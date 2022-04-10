@@ -100,6 +100,11 @@ p {
     width: 100%;
 }
 
+.btn-stretch {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
 /* Media */
 
 .media {
@@ -188,13 +193,60 @@ p {
     display: grid;
 }
 
+/* Callout */
+
+.callout {
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.callout-content {
+    text-align: center;
+}
+
+.callout-accent {
+    background-color: var(--accent-color);
+    color: var(--white-text);
+}
+
+.callout-heading {
+    color: var(--white-text);
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+.callout .btn-contact{
+    color: var(--accent-color);
+}
+
+.callout a {
+    justify-self: center;
+    align-self: center;
+}
+
 /* Media Queries for tablets */
 
 @media screen and (min-width: 768px) {
     .grid-1x2 {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* Callout */
+
+    .callout .grid-1x2 {
+        grid-template-columns: 1fr auto;
+    }
+
+    .callout-content {
+        text-align: left;
+    }
+
+    .callout a {
+        justify-self: start;
+        margin: 0 3rem;
+    }
 }
+
 
 /* Media Queries for PC and Desktops */
 
