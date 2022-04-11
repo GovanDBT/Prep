@@ -13,17 +13,22 @@
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
- <div class="callout callout-accent">
-   <div class="grid grid-1x2">
-     <div class="callout-content">
-       <h2 class="callout-heading">Ready To Get Started?</h2>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque in architecto saepe assumenda quod magnam!</p>
-     </div>
-     <a href="#">
-       <button class="btn btn-callout btn-contact btn-stretch">Get Started</button>
-      </a>
-   </div>
- </div>
+ <nav class="nav collapsible collapsible-expanded">
+   <a href="index.html"><img class="logo" src="images/Logo.svg" alt="Image of the websites logo" srcset=""></a>
+   <div class="toggle"><i class="fa-solid fa-bars"></i></div>
+   <ul class="list nav-list collapsible-content">
+     <li class="nav-item current"><a href="#">Home</a></li>
+     <li class="nav-item"><a href="#">About</a></li>
+     <li class="nav-item"><a href="#">Contact</a></li>
+     <li class="nav-item"><a href="#">Features</a></li>
+   </ul>
+   <a href="#" class="nav-button collapsible-content">
+     <button class="btn btn-accent btn-callout ">Login</button>
+   </a>
+ </nav>
+
+ <!-- JavaScript files-->
+ <script src="js/main.js"></script>
+ <script src="https://kit.fontawesome.com/6f879d6c21.js" crossorigin="anonymous"></script>
 </body>
-<script src="https://kit.fontawesome.com/6f879d6c21.js" crossorigin="anonymous"></script>
 </html>

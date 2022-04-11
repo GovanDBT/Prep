@@ -55,6 +55,10 @@ p {
     font-size: 2.5rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Buttons */
 
 .btn {
@@ -62,7 +66,7 @@ p {
     border: none;
     cursor: pointer;
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 1.7rem;
+    font-size: 2.3rem;
     font-weight: bold;
     margin: 1rem 0;
     padding: 1.2rem 2rem;
@@ -78,6 +82,7 @@ p {
 .btn-accent {
     background-color: var(--accent-color);
     color: var(--white-text);
+    padding: 1.2rem 5rem;
 }
 
 .btn-callout {
@@ -224,6 +229,89 @@ p {
     align-self: center;
 }
 
+/* Navbar */
+
+.nav {
+    align-items: center;
+    background-color: #2d3949;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    white-space: nowrap;
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    text-decoration: none;
+}
+
+.nav-list {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-item {
+    border-bottom: 2px solid #999;
+    padding: 0.5rem 4rem;
+}
+
+.nav-item > a {
+    color: var(--white-text);
+    transition: color .3s;
+}
+
+.nav-item > a:hover {
+    color: #d2d0db;
+}
+
+.current > a {
+    color: var(--accent-color);
+}
+
+/* TODO: set the hover color */
+.current:hover {
+    color: ;
+}
+
+.fa-bars {
+    color: var(--accent-color);
+    cursor: pointer;
+    font-size: 5rem;
+}
+
+/* TODO: add hover color */
+.fa-bars:hover {
+    color: ;
+}
+
+/* TODO: add hover color */
+.collapsible-expanded .fa-bars {
+    color: ;
+}
+
+.logo {
+    width: 5rem;
+}
+
+.collapsible-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.collapsible-expanded .collapsible-content {
+    max-height: 100vh;
+    opacity: 1;
+}
+
+.nav-button {
+    margin: 1rem auto;
+}
+
 /* Media Queries for tablets */
 
 @media screen and (min-width: 768px) {
@@ -245,6 +333,35 @@ p {
         justify-self: start;
         margin: 0 3rem;
     }
+
+    /* Navbar */
+
+    .toggle {
+        display: none;
+        
+    }
+
+    .nav-list {
+        display: flex;
+        font-size: 1.6rem;
+        max-height: 100%;
+        opacity: 1;
+        width: auto;
+    }
+
+    .nav-button{
+        max-height: 100%;
+        opacity: 1;
+    }
+
+    .nav-item {
+        border: 0;
+    }
+
+    .nav-button {
+        margin: 0;
+    }
+
 }
 
 
@@ -273,7 +390,7 @@ p {
 
     /* Buttons */
     .btn {
-        font-size: 2.6rem;
+        font-size: 2rem;
     }
 
     /* Media */
@@ -293,5 +410,10 @@ p {
     /* Grids*/
     .grid-1x3 {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Navbar */
+    .nav-item {
+        padding: 0.5rem 6rem;
     }
 }
