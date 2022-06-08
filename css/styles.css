@@ -15,6 +15,40 @@
     box-sizing: border-box;
 }
 
+/* Hero */
+h1.hero-title {
+    margin-top: 0.5rem;
+    z-index: 1111;
+}
+
+.hero-image {
+    z-index: 0;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    line-height: 2.3;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.hero-contacts {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.hero-contacts a {
+    display: inline-block;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: var(--white-text);
+    margin-right: 0.6rem;
+    padding-right: 0;
+    margin-bottom: 0;
+}
+
 /* Typography */
 
 html {
@@ -386,6 +420,40 @@ a {
 
     p {
         font-size: 3.2rem;
+    }
+
+    /* Hero */
+    .block-content{
+        text-align: left;
+    }
+
+    .hero-image {
+        width: 55rem;
+        position: absolute;
+        top: 100px;
+        right: 120px;
+        z-index: 0;
+    }
+
+    .hero-title {
+        font-size: 11rem;
+        margin-bottom: 0;
+        line-height: 1.3;
+        z-index: 11;
+    }
+
+    .hero-subtitle {
+        width: 50rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+    }
+
+    .btn-block {
+        display: hidden;
+    }
+
+    .hero-contacts a {
+        margin-right: 5rem;
     }
 
     /* Buttons */
