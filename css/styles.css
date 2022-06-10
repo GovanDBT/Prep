@@ -18,6 +18,7 @@
 /* Hero */
 h1.hero-title {
     margin-top: 0.5rem;
+    position: relative;
     z-index: 1111;
 }
 
