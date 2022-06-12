@@ -180,6 +180,11 @@ a {
 
 .block-dark {
     background: var(--dominant-color);
+    color: var(--white-text);
+}
+
+.block-gradient {
+    background: var(--dominant-color);
     background: radial-gradient(circle, rgba(32, 183, 186, 1) 5%, rgba(57, 167, 213, 1) 10%, rgba(44, 117, 188, 1) 30%, rgba(45, 57, 73, 1) 55%);
     color: var(--white-text);
 }
@@ -441,8 +446,7 @@ a {
         text-align: left;
     }
 
-    .block-dark {
-        background: var(--dominant-color);
+    .block-gradient {
         background: radial-gradient(circle at 70%, rgba(32, 183, 186, 1) 5%, rgba(57, 167, 213, 1) 10%, rgba(44, 117, 188, 1) 30%, rgba(45, 57, 73, 1) 55%);
     }
 
