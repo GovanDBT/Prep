@@ -7,6 +7,7 @@
     --secondary-color: #415263;
     --complementary-color:;
     --accent-color: #1dc77c;
+    --accent-hover: #1baa6c;
     --black-color: #474747;
     --white-text: #fff;
 }
@@ -117,7 +118,12 @@ a {
 .btn-accent {
     background-color: var(--accent-color);
     color: var(--white-text);
-    padding: 1.2rem 5rem;
+    padding: 1.2rem 3.5rem;
+    transition: all .4s ease;
+}
+
+.btn-accent:hover {
+    background-color: var(--accent-hover);
 }
 
 .btn-callout {
@@ -174,6 +180,7 @@ a {
 
 .block-dark {
     background: var(--dominant-color);
+    background: radial-gradient(circle, rgba(32, 183, 186, 1) 5%, rgba(57, 167, 213, 1) 10%, rgba(44, 117, 188, 1) 30%, rgba(45, 57, 73, 1) 55%);
     color: var(--white-text);
 }
 
@@ -268,12 +275,16 @@ a {
 
 .nav {
     align-items: center;
-    background-color: #2d3949;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem;
+    padding-top: 0.5rem;
     white-space: nowrap;
+}
+
+.block-content {
+    padding-top: 0;
 }
 
 .list {
@@ -307,14 +318,14 @@ a {
 }
 
 /* TODO: set the hover color */
-.current:hover {
-    color: ;
+.current a:hover {
+    color: var(--accent-hover);
 }
 
-.fa-bars {
+.fa-bars-staggered {
     color: var(--accent-color);
     cursor: pointer;
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
 
 /* TODO: add hover color */
@@ -328,7 +339,9 @@ a {
 }
 
 .logo {
-    width: 5rem;
+    width: 4.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .collapsible-content {
@@ -378,7 +391,7 @@ a {
 
     .nav-list {
         display: flex;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         max-height: 100%;
         opacity: 1;
         width: auto;
@@ -428,8 +441,13 @@ a {
         text-align: left;
     }
 
+    .block-dark {
+        background: var(--dominant-color);
+        background: radial-gradient(circle at 70%, rgba(32, 183, 186, 1) 5%, rgba(57, 167, 213, 1) 10%, rgba(44, 117, 188, 1) 30%, rgba(45, 57, 73, 1) 55%);
+    }
+
     .hero-image {
-        width: 55rem;
+        width: 54rem;
         position: absolute;
         top: 100px;
         right: 120px;
@@ -437,7 +455,7 @@ a {
     }
 
     .hero-title {
-        font-size: 11rem;
+        font-size: 9rem;
         margin-bottom: 0;
         line-height: 1.3;
         z-index: 11;
@@ -453,13 +471,18 @@ a {
         display: hidden;
     }
 
+    .hero-contacts {
+        position: relative;
+        bottom: -6rem;
+    }
+
     .hero-contacts a {
         margin-right: 5rem;
     }
 
     /* Buttons */
     .btn {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     /* Media */
@@ -482,7 +505,11 @@ a {
     }
 
     /* Navbar */
+    .nav {
+        margin-bottom: 5rem;
+    }
+
     .nav-item {
-        padding: 0.5rem 6rem;
+        padding: 0.5rem 4rem;
     }
 }
