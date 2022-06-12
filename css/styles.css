@@ -151,25 +151,72 @@ a {
     padding-right: 6rem;
 }
 
-/* Media */
+/* features */
 
-.media {
-    display: block;
+.tag {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tag-title {
+    background-color: var(--dominant-color);
+    padding: 0.3rem 2rem;
+    border-radius: 15px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--white-text);
+    transition: all .5s ease;
+}
+
+.features {
+    width: 40rem;
     padding: 2rem 1rem;
+    padding-top: 1rem;
     text-align: center;
 }
 
-.media-icon {
-    color: var(--dominant-color);
-    font-size: 8rem;
+.feature-icon {
+    color: var(--white-text);
+    font-size: 5rem;
+    background: var(--accent-color);
+    padding: 10px;
+    border-radius: 50%;
+    width: 100px;
+    margin: auto;
+    text-align: center;
 }
 
-.media-body p {
-    font-size: 2.2rem;
+.feature-body p {
+    font-size: 2rem;
 }
 
-.media_title {
+.feature-header {
     font-size: 3.2rem;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.owl-dot {
+    width: 14px;
+    height: 14px;
+    background: var(--dominant-color) !important;
+    margin: 0 6px;
+    border-radius: 14px;
+    outline: none;
+    transition: .3s linear;
+}
+
+.owl-dot.active {
+    width: 36px;
+    background: var(--accent-color) !important;
+}
+
+.owl-dot.hover {
+    width: 36px;
+    background: var(--accent-color) !important;
 }
 
 /* Blocks */
@@ -489,18 +536,22 @@ a {
         font-size: 1.4rem;
     }
 
-    /* Media */
+    /* features */
 
-    .media-icon {
-        font-size: 10rem;
+    .features {
+        width: 80rem;
     }
 
-    .media_title {
-        font-size: 5.5rem;
+    .feature-icon {
+        font-size: 5rem;
     }
 
-    .media-body p {
-        font-size: 3.2rem;
+    .feature-header {
+        font-size: 2.3rem;
+    }
+
+    .feature-body p {
+        font-size: 1.7rem;
     }
 
     /* Grids*/

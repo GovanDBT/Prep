@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PREP</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="UTF-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" charset="UTF-8"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
 
-
+<!-- Hero section to introduce the website  -->
 <section class="blocks block-gradient curve">
   <div class="container block-content">
+    <!-- Navigation bar -->
     <nav class="nav collapsible collapsible-expanded">
       <a href="index.html"><img class="logo" src="images/Logo.svg" alt="Image of the websites logo" srcset=""></a>
       <div class="toggle"><i class="fa-solid fa-bars-staggered"></i></div>
@@ -30,11 +34,15 @@
         <button class="btn btn-accent btn-callout ">Login</button>
       </a>
     </nav>
+
+    <!-- Hero content area and banner-->
     <h1 class="hero-title hero-left">Start Studying <br> With Us</h1>
     <img class="hero-image" src="images/Banner2.svg" alt="Banner Image" srcset="">
     <p class="hero-subtitle hero-left">We provide online school material and information to help you study for that
       exam.<br> Join us to get started</p>
     <button class="btn btn-accent btn-callout">get started</button>
+
+    <!-- Social media contacts-->
     <ul class="hero-contacts hero-left">
       <a href="#">
         <li>Facebook</li>
@@ -50,6 +58,7 @@
       </a>
     </ul>
   </div>
+  <!-- Curved decoration of the hero section -->
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
     <path fill="#fff" fill-opacity="1"
       d="M0,128L60,154.7C120,181,240,235,360,224C480,213,600,139,720,128C840,117,960,171,1080,165.3C1200,160,1320,96,1380,64L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
@@ -57,8 +66,104 @@
   </svg>
 </section>
 
+<!-- The Features section which describes the services we provide summarized -->
+<div class="feature-section">
+  <div class="tag"> <!-- Small header tag -->
+    <span class="tag-title">Features</span>
+  </div>
+    <!-- Carousel -->
+    <div class="features owl-carousel container">
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fa-solid fa-book-atlas"></i>
+        </div>
+        <div class="feature-body">
+          <h2 class="feature-header">Online Library</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, rem ullam! Modi eaque ad assumenda tenetur</p>
+        </div>
+      </div>
+  
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fa-solid fa-piggy-bank"></i>
+        </div>
+        <div class="feature-body">
+          <h2 class="feature-header">Free</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, rem ullam! Modi eaque ad assumenda tenetur</p>
+        </div>
+      </div>
+  
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fa-solid fa-download"></i>
+        </div>
+        <div class="feature-body">
+          <h2 class="feature-header">Download</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, rem ullam! Modi eaque ad assumenda tenetur</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fa-solid fa-file-circle-check"></i>
+        </div>
+        <div class="feature-body">
+          <h2 class="feature-header">Testpapers</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, rem ullam! Modi eaque ad assumenda tenetur</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fa-solid fa-file-circle-plus"></i>
+        </div>
+        <div class="feature-body">
+          <h2 class="feature-header">Latest Updates</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, rem ullam! Modi eaque ad assumenda tenetur</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fa-solid fa-users-gear"></i>
+        </div>
+        <div class="feature-body">
+          <h2 class="feature-header">User Friendly</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, rem ullam! Modi eaque ad assumenda tenetur</p>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
+<!-- App showcase will go here... -->
+
+
  <!-- JavaScript files-->
+<script>
+  $('.features').owlCarousel({
+    margin:30,
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsive:{
+      0:{
+        items:1
+      },
+      1000:{
+        items:2
+      },
+      1600: {
+        items:3
+      }
+    }
+  });
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
  <script src="js/main.js"></script>
  <script src="https://kit.fontawesome.com/6f879d6c21.js" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </body>
 </html>
