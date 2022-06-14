@@ -364,6 +364,7 @@ a {
 .quote {
     font-family: Perpetua, Arial, Helvetica, sans-serif;
     font-size: 3.8rem;
+    color: var(--dominant-color);
     font-style: italic;
     line-height: 1.2;
     margin-bottom: 2rem;
@@ -515,8 +516,26 @@ a {
 
 /* Partners */
 
-.partners {
+.web-content {
     text-align: center;
+}
+
+.sponsor-logos img {
+    width: 13rem;
+    margin: 0.8rem 2rem;
+}
+
+/* Gaurantee */
+
+.guarantee img {
+    width: 35rem;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.guarantee-content .quote {
+    font-size: 3.2rem;
 }
 
 /* Media Queries for tablets */
@@ -579,7 +598,7 @@ a {
     }
 
     h2 {
-        font-size: 4.8rem;
+        font-size: 4.5rem;
     }
 
     h3 {
