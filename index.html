@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/normalize.css">
-</head>
-<body>
+  </head>
+  <body>
 
-<!-- Hero section to introduce the website  -->
-<section class="blocks block-gradient curve">
+    <!-- Hero section to introduce the website  -->
+    <section class="blocks block-gradient curve">
   <div class="container block-content">
     <!-- Navigation bar -->
     <nav class="nav collapsible collapsible-expanded">
@@ -64,10 +64,10 @@
       d="M0,128L60,154.7C120,181,240,235,360,224C480,213,600,139,720,128C840,117,960,171,1080,165.3C1200,160,1320,96,1380,64L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
     </path>
   </svg>
-</section>
+    </section>
 
-<!-- The Features section which describes the services we provide summarized -->
-<div class="feature-section">
+    <!-- The Features section which describes the services we provide summarized -->
+    <div class="feature-section">
   <div class="tag"> <!-- Small header tag -->
     <span class="tag-title">Features</span>
   </div>
@@ -134,13 +134,101 @@
       </div>
     </div>
   
-</div>
+    </div>
 
-<!-- App showcase will go here... -->
+    <!-- App showcase -->
+    <div class="app">
+      <div class="app-showcase container">
+    <!--overview of the app-->
+    <div class="spoiler">
+      <!--Changes the image depending on the screen size-->
+      <picture>
+        <source media="(max-width: 768px)" srcset="images/phone2.png">
+        <source media="(min-width: 769px)" srcset="images/phone1.png">
+        <img class="app-image" src="images/phone1.png" alt="">
+      </picture>
+      <h2>Coming Soon</h2>
+    </div>
+    <!--link to download app-->
+    <div class="download-app">
+      <p>To access our features anytime, download our mobile app</p>
+      <a href="#"><img class="store" src="images/Google-play.svg" alt=""></a>
+      <a href="#"><img class="store" src="images/App-store.svg" alt=""></a>
+    </div>
+      </div>
+    </div>
+
+    <!-- App's features -->
+    <section class="blocks block-dark curve">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,160L80,165.3C160,171,320,181,480,160C640,139,800,85,960,85.3C1120,85,1280,139,1360,165.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+      </path>
+      </svg>
+      <div class="app-features block-content container">
+        <div class="grid grid-1x2">
+          <img class="mockup-image" src="images/MockUp.png" alt="">
+          <!-- App feature content -->
+          <div class="media">
+            <div class="media-header">
+              <div class="tag">
+                <!-- Small header tag -->
+                <span class="tag-title">App Features</span>
+              </div>
+            </div>
+      
+            <div class="media-content">
+              <div class="media-icon">
+                <i class="fa-solid fa-book-atlas"></i>
+              </div>
+              <div class="media-body">
+                <h3 class="media-title">Getting Docs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique iste provident amet illum nisi
+                voluptatibus quis illo magnam sint hic.</p>
+              </div>
+            </div>
+
+            <div class="media-content">
+              <div class="media-icon">
+                <i class="fa-solid fa-book-atlas"></i>
+              </div>
+              <div class="media-body">
+                <h3 class="media-title">Getting Docs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique iste provident amet illum nisi
+                  voluptatibus quis illo magnam sint hic.</p>
+              </div>
+            </div>
+
+            <div class="media-content">
+              <div class="media-icon">
+                <i class="fa-solid fa-book-atlas"></i>
+              </div>
+              <div class="media-body">
+                <h3 class="media-title">Getting Docs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique iste provident amet illum nisi
+                  voluptatibus quis illo magnam sint hic.</p>
+              </div>
+            </div>
+
+            <div class="media-content">
+              <div class="media-icon">
+                <i class="fa-solid fa-book-atlas"></i>
+              </div>
+              <div class="media-body">
+                <h3 class="media-title">Getting Docs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique iste provident amet illum nisi
+                  voluptatibus quis illo magnam sint hic.</p>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    </section>
 
 
- <!-- JavaScript files-->
-<script>
+    <!-- JavaScript files and links -->
+    <script>
   $('.features').owlCarousel({
     margin:30,
     loop:true,
@@ -159,11 +247,11 @@
       }
     }
   });
-</script>
+    </script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
- <script src="js/main.js"></script>
- <script src="https://kit.fontawesome.com/6f879d6c21.js" crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/6f879d6c21.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </body>
 </html>
