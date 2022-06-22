@@ -29,7 +29,7 @@ h1.hero-title {
 }
 
 .hero-image {
-    z-index: 0;
+    padding: 1rem 5rem;
 }
 
 .hero-subtitle {
@@ -335,8 +335,8 @@ a {
 }
 
 .block-gradient {
-    background: radial-gradient(circle, rgba(32, 183, 186, 1) 5%, rgba(57, 167, 213, 1) 10%, rgba(44, 117, 188, 1) 30%, rgba(45, 57, 73, 1) 55%);
     background: var(--dominant-color);
+    background: radial-gradient(circle, rgba(32, 183, 186, 1) 5%, rgba(57, 167, 213, 1) 10%, rgba(44, 117, 188, 1) 30%, rgba(45, 57, 73, 1) 55%);
     color: var(--white-text);
 }
 
@@ -350,6 +350,7 @@ a {
 
 .block-content {
     padding: 2rem 3rem;
+    padding-top: 0;
     text-align: center;
 }
 
@@ -369,6 +370,7 @@ a {
 .container {
     margin: 0 auto;
     max-width: 1140px;
+    text-align: center;
 }
 
 /* Quotes */
@@ -376,10 +378,13 @@ a {
 .quote {
     color: var(--dominant-color);
     font-family: Perpetua, Arial, Helvetica, sans-serif;
-    font-size: 3.8rem;
     font-style: italic;
     line-height: 1.2;
     margin-bottom: 2rem;
+}
+
+.quote p {
+    font-size: 2.6rem;
 }
 
 .quote-text::before {
@@ -447,10 +452,6 @@ a {
     padding-top: 0.5rem;
     padding: 1rem;
     white-space: nowrap;
-}
-
-.block-content {
-    padding-top: 0;
 }
 
 .list {
@@ -538,8 +539,7 @@ a {
 }
 
 .text-width {
-    margin: auto;
-    width: 70ch;
+    width: 70%;
 }
 
 /* Guarantee */
@@ -602,6 +602,13 @@ a {
 
 }
 
+/* Compatibility */
+
+.compatibility h1 {
+    color: var(--dominant-color);
+    opacity: .3;
+}
+
 
 /* Media Queries for PC and Desktops */
 
@@ -627,7 +634,7 @@ a {
     }
 
     /* Hero */
-    .block-content{
+    .hero-content{
         text-align: left;
     }
 
@@ -636,6 +643,7 @@ a {
     }
 
     .hero-image {
+        padding: 0;
         position: absolute;
         right: 120px;
         top: 100px;
