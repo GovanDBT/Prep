@@ -557,6 +557,27 @@ a {
     align-self: center;
 }
 
+/* Footer */
+
+footer.blocks {
+    padding-bottom: 1rem;
+}
+
+.footer-sections h2 {
+    color: var(--white-text);
+}
+
+.footer-image {
+    width: 100%;
+}
+
+.copyright {
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0.6;
+    margin: 0;
+}
+
 /* Media Queries for tablets */
 
 @media screen and (min-width: 768px) {
@@ -617,6 +638,20 @@ a {
     .callout a {
         justify-self: start;
         margin: 0 3rem;
+    }
+
+    /* Footer */
+
+    .footer-sections {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+
+    .footer-brand {
+        order: -1;
+    }
+
+    .footer-contact {
+        order: 1;
     }
 
 }
