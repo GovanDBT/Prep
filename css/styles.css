@@ -36,7 +36,7 @@ body {
     line-height: 1.5;
 }
 
-h2, h3, span {
+h2, h3 {
     color: var(--secondary-color);
     font-family: open-sans, Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -313,6 +313,12 @@ a {
     padding: 1.5rem;
 }
 
+/* Grids */
+
+.grid {
+    display: grid;
+}
+
 /* features */
 
 .tag {
@@ -326,14 +332,15 @@ a {
     border-radius: 15px;
     color: var(--white-text);
     font-size: 1.6rem;
-    font-weight: bold;
     padding: 0.3rem 2rem;
-    transition: all .5s ease;
+}
+
+.block-dark .tag-title {
+    background: var(--accent-color);
 }
 
 .features {
-    padding-top: 1rem;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     text-align: center;
     width: 40rem;
 }
@@ -349,12 +356,12 @@ a {
     width: 100px;
 }
 
-.feature-body p {
-    font-size: 2rem;
-}
-
 .feature-header {
     font-size: 3.2rem;
+}
+
+.feature-body p {
+    font-size: 2rem;
 }
 
 .owl-dots {
@@ -382,7 +389,7 @@ a {
     width: 36px;
 }
 
-/* APP */
+/* App showcase section  */
 
 .app-showcase {
     height: 700px;
@@ -394,7 +401,7 @@ a {
     width: 25rem;
 }
 
-.app-showcase h2 {
+.app-title {
     background-color: var(--accent-color);
     border-radius: 4px;
     color: var(--white-text);
@@ -413,7 +420,7 @@ a {
     top: -100px;
 }
 
-.app-showcase p {
+.download-app p {
     font-size: 1.5rem;
     margin: 0;
 }
@@ -422,12 +429,10 @@ a {
     width: 15rem;
 }
 
+/* App features */
+
 .app-features {
     margin: auto;
-}
-
-.app-features .tag-title {
-    background: var(--accent-color);
 }
 
 .app-features .media-content {
@@ -450,8 +455,20 @@ a {
     margin-bottom: 2rem;
 }
 
-.quote p {
+.quote-image {
+    height: 16rem;
+    width: 18rem;
+    margin-bottom: 2rem;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 2px solid var(--accent-color);
+    padding: 0.5rem;
+}
+
+.quote-text {
+    margin: auto;
     font-size: 2.6rem;
+    margin-bottom: 2rem;
 }
 
 .quote-text::before {
@@ -463,19 +480,15 @@ a {
 }
 
 .quote-name {
+    font-size: 2.8rem;
     font-style: normal;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
 .quote-occupation {
+    font-size: 2.4rem;
     font-style: normal;
-}
-
-/* Grids */
-
-.grid {
-    display: grid;
 }
 
 /* Callout */
@@ -538,35 +551,24 @@ a {
 /* Media Queries for tablets */
 
 @media screen and (min-width: 768px) {
+
+    /* Grids */
+
     .grid-1x2 {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Callout */
-
-    .callout .grid-1x2 {
-        grid-template-columns: 1fr auto;
-    }
-
-    .callout-content {
-        text-align: left;
-    }
-
-    .callout a {
-        justify-self: start;
-        margin: 0 3rem;
-    }
-
-    /* APP */
-    .app-image {
-        width: 55rem;
-    }
+    /* App Section */
 
     .app-showcase {
         height: 570px;
     }
+    
+    .app-image {
+        width: 65rem;
+    }
 
-    .app-showcase h2 {
+    .app-title {
         background: none;
         color: var(--dominant-color);
         font-size: 10rem;
@@ -583,7 +585,28 @@ a {
     /* web content */
     .text-width {
         margin:0 auto;
-         width: 70ch;
+        width: 78rem;
+    }
+
+    /* Quote section */
+
+    .quote-text {
+        margin-bottom: 2rem;
+    }
+
+    /* Callout */
+
+    .callout .grid-1x2 {
+        grid-template-columns: 1fr auto;
+    }
+
+    .callout-content {
+        text-align: left;
+    }
+
+    .callout a {
+        justify-self: start;
+        margin: 0 3rem;
     }
 
 }
@@ -698,6 +721,12 @@ a {
         background: radial-gradient(circle at 70%, rgba(32, 183, 186, 1) 5%, rgba(57, 167, 213, 1) 10%, rgba(44, 117, 188, 1) 30%, rgba(45, 57, 73, 1) 55%);
     }
 
+    /* Grids */
+
+    .grid-1x3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     /* features */
 
     .features {
@@ -714,14 +743,9 @@ a {
 
     .feature-body p {
         font-size: 1.7rem;
-    }
-
-    /* Grids*/
-    .grid-1x3 {
-        grid-template-columns: repeat(3, 1fr);
     }   
 
-    /* APP */
+    /* App section  */
 
     .download-app {
         top: -250px;
