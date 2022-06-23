@@ -491,6 +491,41 @@ a {
     font-style: normal;
 }
 
+/* The sponsors section  */
+
+.web-content {
+    text-align: center;
+}
+
+.sponsor-logos img {
+    margin: 0.8rem 2rem;
+    width: 13rem;
+}
+
+/* Guarantee section  */
+
+.guarantee img {
+    align-self: center;
+    display: flex;
+    justify-self: center;
+    width: 35rem;
+}
+
+.guarantee-content .quote {
+    font-size: 2.9rem;
+}
+
+.guarantee-content h3 {
+    color: var(--accent-color);
+}
+
+/* Compatibility section */
+
+.compatibility h1 {
+    color: var(--dominant-color);
+    opacity: .3;
+}
+
 /* Callout */
 
 .callout {
@@ -520,32 +555,6 @@ a {
 .callout a {
     justify-self: center;
     align-self: center;
-}
-
-
-
-/* Partners */
-
-.web-content {
-    text-align: center;
-}
-
-.sponsor-logos img {
-    margin: 0.8rem 2rem;
-    width: 13rem;
-}
-
-/* Guarantee */
-
-.guarantee img {
-    align-self: center;
-    display: flex;
-    justify-self: center;
-    width: 35rem;
-}
-
-.guarantee-content .quote {
-    font-size: 2.9rem;
 }
 
 /* Media Queries for tablets */
@@ -582,16 +591,17 @@ a {
         top: -370px;
     }
 
-    /* web content */
-    .text-width {
-        margin:0 auto;
-        width: 78rem;
-    }
-
     /* Quote section */
 
     .quote-text {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    /* web content */
+
+    .text-width {
+        margin: 0 auto;
+        width: 78rem;
     }
 
     /* Callout */
@@ -610,14 +620,6 @@ a {
     }
 
 }
-
-/* Compatibility */
-
-.compatibility h1 {
-    color: var(--dominant-color);
-    opacity: .3;
-}
-
 
 /* Media Queries for PC and Desktops */
 
@@ -681,6 +683,7 @@ a {
     }
 
     /* Navbar */
+
     .nav {
         margin-bottom: 5rem;
     }
@@ -749,5 +752,11 @@ a {
 
     .download-app {
         top: -250px;
+    }
+
+    /* Quote section */
+
+    .quote-text {
+        margin-bottom: 3rem;
     }
 }
