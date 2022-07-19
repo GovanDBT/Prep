@@ -563,12 +563,70 @@ footer.blocks {
     padding-bottom: 1rem;
 }
 
-.footer-sections h2 {
+.footer-title {
+    margin: 0;
+    font-size: 4rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
     color: var(--white-text);
 }
 
-.footer-image {
+.footer-contact button {
+    transition: all ease .5s;
+    width: 20rem;
+}
+
+.footer-input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #999;
+    font-size: 1.7rem;
+    outline: none;
+    resize: none;
+    padding: 1.5rem 0;
     width: 100%;
+    color: var(--accent-color);
+    margin-bottom: 0.8rem;
+}
+
+.footer-links {
+    border-bottom: 2px solid #999;
+    margin-bottom: 2rem;
+}
+
+.list-footer li {
+    color: var(--white-text--hover);
+    opacity: 0.6;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    transition: all ease .3s;
+}
+
+.list-footer li:hover {
+    color: var(--white-text);
+    opacity: 1;
+}
+
+.footer-image {
+    width: 13rem;
+    padding: 0.8rem;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-icons a {
+    color: var(--white-text--hover);
+    padding: 1rem;
+}
+
+.contact-icons i {
+    transition: all ease .4s;
+}
+
+.contact-icons i:hover {
+    color: var(--white-text);
 }
 
 .copyright {
@@ -640,20 +698,28 @@ footer.blocks {
         margin: 0 3rem;
     }
 
-    /* Footer */
-
-    .footer-sections {
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    }
-
-    .footer-brand {
-        order: -1;
-    }
-
-    .footer-contact {
-        order: 1;
-    }
-
+        /* Footer */
+    
+        .footer-sections {
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        }
+    
+        .footer-links {
+            border: none;
+            margin-bottom: 0;
+        }
+    
+        .footer-brand {
+            order: -1;
+        }
+    
+        .footer-contact {
+            order: 1;
+        }
+    
+        .footer-brand p {
+            text-align: left;
+        }
 }
 
 /* Media Queries for PC and Desktops */
