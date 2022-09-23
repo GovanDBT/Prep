@@ -191,13 +191,14 @@ a {
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-family: Open-sans, Arial, Helvetica, sans-serif;
     font-size: 2rem;
     font-weight: bold;
     margin: 1rem 0;
     padding: 1.2rem 2rem;
     text-align: center;
     white-space: nowrap;
+    letter-spacing: 0.8px;
 }
 
 .btn-accent {
@@ -213,7 +214,7 @@ a {
 
 .btn-callout {
     border-radius: 30px;
-    text-transform: uppercase;
+    
 }
 
 .btn-contact {
@@ -248,7 +249,8 @@ a {
 
 .block-gradient {
     background: var(--dominant-color);
-    background: radial-gradient(circle, rgba(32, 183, 186, 1) 5%, rgba(57, 167, 213, 1) 10%, rgba(44, 117, 188, 1) 30%, rgba(45, 57, 73, 1) 55%);
+    background: url(../images/child.jpg) left no-repeat;
+    background-size: cover;
     color: var(--white-text);
 }
 
@@ -816,13 +818,14 @@ footer.blocks {
     /* Buttons */
 
     .btn {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     /* Blocks */
 
     .block-gradient {
-        background: radial-gradient(circle at 70%, rgba(32, 183, 186, 1) 5%, rgba(57, 167, 213, 1) 10%, rgba(44, 117, 188, 1) 30%, rgba(45, 57, 73, 1) 55%);
+        background: url(../images/child.jpg) no-repeat;
+        background-size: cover;
     }
 
     /* Grids */
@@ -859,5 +862,12 @@ footer.blocks {
 
     .quote-text {
         margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* Container */
+    .container {
+        max-width: 1340px;
     }
 }
