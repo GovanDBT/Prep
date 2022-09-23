@@ -105,7 +105,7 @@ a {
 }
 
 .banner-image {
-    width: 45rem;
+    width: 100%;
 }
 
 /* Navbar */
@@ -218,7 +218,17 @@ a {
 
 .btn-callout {
     border-radius: 30px;
-    
+    transition: all .7s ease;
+}
+
+.callout .btn-callout {
+    color: var(--accent-color);
+    background: var(--white-text);
+}
+
+.callout .btn-callout:hover {
+    background-color: var(--dominant-color);
+    color: var(--white-text);
 }
 
 .btn-contact {
@@ -348,7 +358,7 @@ a {
 .features {
     padding: 3rem 1rem;
     text-align: center;
-    width: 40rem;
+    width: 100%;
 }
 
 .feature-icon {
@@ -608,6 +618,7 @@ a {
     font-weight: 800;
     letter-spacing: 1px;
     text-transform: uppercase;
+    font-size: 3rem;
 }
 .title-sec p {
     text-transform: capitalize;
@@ -641,7 +652,7 @@ a {
     align-self: center;
     display: flex;
     justify-self: center;
-    width: 35rem;
+    width: 100%;
 }
 
 .guarantee-content .quote {
@@ -663,7 +674,10 @@ a {
 
 .callout {
     padding: 4rem;
-    border-radius: 5px;
+    border-radius: 20px;
+    width: 100%;
+    position: relative;
+    bottom: -80px;
 }
 
 .callout-content {
@@ -675,14 +689,14 @@ a {
     color: var(--white-text);
 }
 
+.callout-content p {
+    font-size: 2rem;
+}
+
 .callout-heading {
     color: var(--white-text);
     margin-top: 0;
-    white-space: nowrap;
-}
-
-.callout .btn-contact{
-    color: var(--accent-color);
+    font-size: 3rem;
 }
 
 .callout a {
@@ -690,10 +704,18 @@ a {
     align-self: center;
 }
 
+.callout .btn-contact {
+    color: var(--white-text);
+}
+
 /* Footer */
 
 footer.blocks {
     padding-bottom: 1rem;
+}
+
+.footer-sections {
+    margin-top: 8rem;
 }
 
 .footer-title {
@@ -835,6 +857,7 @@ footer.blocks {
     
         .footer-sections {
             grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+            align-items: center;
         }
     
         .footer-links {
@@ -851,8 +874,12 @@ footer.blocks {
         }
     
         .footer-brand p {
-            text-align: left;
+            text-align: center;
         }
+
+    .title-sec h2 {
+        font-size: 5rem;
+    }
 }
 
 /* Media Queries for PC and Desktops */
@@ -987,11 +1014,26 @@ footer.blocks {
     .quote-text {
         margin-bottom: 3rem;
     }
+
+    /* Footer */
+
+        .footer-brand p {
+            text-align: left;
+        }
 }
 
 @media screen and (max-width: 1024px) {
+    
     /* Container */
     .container {
-        max-width: 1380px;
+        max-width: 1280px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+
+    /* Container */
+    .container {
+        max-width: 1680px;
     }
 }
