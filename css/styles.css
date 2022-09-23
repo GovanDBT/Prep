@@ -104,6 +104,10 @@ a {
     color: var(--white-text--hover);
 }
 
+.banner-image {
+    width: 45rem;
+}
+
 /* Navbar */
 
 .nav {
@@ -249,7 +253,7 @@ a {
 
 .block-gradient {
     background: var(--dominant-color);
-    background: url(../images/child.jpg) left no-repeat;
+    background: url(../images/Banner.jpg) no-repeat;
     background-size: cover;
     color: var(--white-text);
 }
@@ -821,13 +825,6 @@ footer.blocks {
         font-size: 1.8rem;
     }
 
-    /* Blocks */
-
-    .block-gradient {
-        background: url(../images/child.jpg) no-repeat;
-        background-size: cover;
-    }
-
     /* Grids */
 
     .grid-1x3 {
@@ -868,6 +865,6 @@ footer.blocks {
 @media screen and (max-width: 1024px) {
     /* Container */
     .container {
-        max-width: 1340px;
+        max-width: 1380px;
     }
 }
