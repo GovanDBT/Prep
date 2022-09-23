@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PREP</title>
+    <title>Prep.com</title>
+    <link rel="icon" type="x-icon" href="images/Logo.svg">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="UTF-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" charset="UTF-8"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,13 +27,13 @@
           <a href="index.html"><img class="logo" src="images/TextLogo.svg" alt="Image of the websites logo" srcset=""></a>
           <div class="toggle"><i class="fa-solid fa-bars-staggered"></i></div>
           <ul class="list nav-list collapsible-content">
-            <li class="nav-item current"><a href="#">Home</a></li>
-            <li class="nav-item"><a href="#">About Us</a></li>
-            <li class="nav-item"><a href="#">Programs  <i class="fa-solid fa-circle-chevron-right"></i></a></li>
-            <li class="nav-item"><a href="#">Contact</a></li>
-            <li class="nav-item"><a href="#">Features</a></li>
+            <li class="nav-item current"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="links/about.html">About Us</a></li>
+            <li class="nav-item"><a href="links/programs.html">Programs  <i class="fa-solid fa-circle-chevron-right"></i></a></li>
+            <li class="nav-item"><a href="#contact" id="contact-link">Contact</a></li>
+            <li class="nav-item"><a href="links/features.html">Features</a></li>
           </ul>
-          <a href="#" class="nav-button collapsible-content">
+          <a href="links/form.html" class="nav-button collapsible-content">
             <button class="btn btn-accent btn-callout">Login</button>
           </a>
         </nav>
@@ -48,7 +49,7 @@
           <em>We provide online school material and information to help you study for that
           exam.<br> Join us to get started</em>
         </p>
-        <button class="btn btn-accent">Get Started</button>
+        <a href="links/form.html"><button class="btn btn-accent">Get Started</button></a>
 
         <!-- Social media contacts-->
         <ul class="hero-contacts">
@@ -169,7 +170,7 @@
         <img src="images/sapapane.jpg" alt="">
         <img src="images/global-expo.png" alt="">
       </div>
-      <button class="btn btn-accent">Learn More</button>
+      <a href="links/partners.html"><button class="btn btn-accent">Learn More</button></a>
     </section>
 
     <section class="web-content">
@@ -180,7 +181,7 @@
           <div class="guarantee-content">
               <h3 class="quote"><span class="quote quote-text">You can only become truly accomplished at something you love</span> - Maya Angelou</h3>
             <p>We love our work, and for that we provide you with the best services to keep you satisfied.</p>
-            <button class="btn btn-accent">Learn More</button>
+            <a href="links/guarentee.html"><button class="btn btn-accent">Learn More</button></a>
           </div>
         </div>
       </div>
@@ -288,7 +289,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque in architecto saepe assumenda quod
             magnam!</p>
         </div>
-        <a href="#">
+        <a href="links/form.html">
           <button class="btn btn-callout btn-stretch">Get Started</button>
         </a>
       </div>
@@ -300,7 +301,7 @@
     
         <!--Footer contact us-->
         <section class="footer-contact">
-          <h2 class="footer-title">Contact us</h2>
+          <h2 id="contact" class="footer-title">Contact us</h2>
           <input class="footer-input" type="text" placeholder="Enter Your Name">
           <input class="footer-input" type="email" placeholder="Enter Your Email Address">
           <textarea class="footer-input" cols="10" rows="5" placeholder="Write Your Message..."></textarea>
