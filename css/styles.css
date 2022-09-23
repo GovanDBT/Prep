@@ -459,6 +459,7 @@ a {
     font-style: italic;
     line-height: 1.2;
     margin-bottom: 2rem;
+    
 }
 
 .quote-image {
@@ -495,6 +496,132 @@ a {
 .quote-occupation {
     font-size: 2.4rem;
     font-style: normal;
+}
+
+/* Testimonial */
+
+.testimonial {
+    position: relative;
+    z-index: 2;
+    padding: 30px 0;
+}
+
+.single-testimonial {
+    border: 7px solid var(--dominant-color);
+    text-align: center;
+    border-radius: 45px;
+    position: relative;
+    z-index: 2;
+}
+
+.single-testimonial p {
+    padding: 50px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 3;
+    color: var(--dominant-color);
+    font-family: Perpetua, Arial, Helvetica, sans-serif;
+    font-style: italic;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+.single-testimonial::before {
+    content: '\f10d';
+    position: absolute;
+    font-family: FontAwesome;
+    color: var(--dominant-color);
+    font-size: 80px;
+    left: -35px;
+    top: -35px;
+    background: #fff;
+    width: 126px;
+    height: 100px;
+}
+
+.single-testimonial::after {
+    content: '\f10e';
+    position: absolute;
+    font-family: FontAwesome;
+    color: var(--dominant-color);
+    font-size: 80px;
+    right: -35px;
+    bottom: -20px;
+    background: #fff;
+    width: 126px;
+    height: 100px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.client-details h6 {
+    color: var(--accent-color);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.client-details span {
+    display: inline-block;
+    font-size: 13px;
+    margin-top: -90px;
+}
+
+.client-pic {
+    padding-right: 15px;
+}
+
+.client-pic img {
+    height: 12rem;
+    margin-bottom: 2rem;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 2px solid var(--accent-color);
+    padding: 0.5rem;
+}
+
+.owl-carousel .owl-item img {
+    width: 12rem;
+}
+
+.testimonial .container {
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.title-sec {
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.title-sec h2 {
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.title-sec p {
+    text-transform: capitalize;
+    line-height: 8px;
+}
+
+.title-sec:after {
+    content: '';
+    position: absolute;
+    left: auto;
+    bottom: 0;
+    width: 100px;
+    height: 3px;
+    background: var(--accent-color);
 }
 
 /* The sponsors section  */
