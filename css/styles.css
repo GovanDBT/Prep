@@ -73,6 +73,11 @@ a {
     z-index: 1111;
 }
 
+.auto-type {
+    font-weight: 800;
+    color: #fff724;
+}
+
 .hero-image {
     padding: 1rem 5rem;
 }
