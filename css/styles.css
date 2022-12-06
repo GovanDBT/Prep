@@ -799,6 +799,10 @@ footer.blocks {
 /* Media Queries for tablets */
 
 @media screen and (min-width: 768px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
 
     /* Grids */
 
@@ -858,29 +862,29 @@ footer.blocks {
         margin: 0 3rem;
     }
 
-        /* Footer */
+    /* Footer */
     
-        .footer-sections {
-            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-            align-items: center;
-        }
+    .footer-sections {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        align-items: center;
+    }
     
-        .footer-links {
-            border: none;
-            margin-bottom: 0;
-        }
+    .footer-links {
+        border: none;
+        margin-bottom: 0;
+    }
     
-        .footer-brand {
-            order: -1;
-        }
+    .footer-brand {
+        order: -1;
+    }
     
-        .footer-contact {
-            order: 1;
-        }
+    .footer-contact {
+        order: 1;
+    }
     
-        .footer-brand p {
-            text-align: center;
-        }
+    .footer-brand p {
+        text-align: center;
+    }
 
     .title-sec h2 {
         font-size: 5rem;
